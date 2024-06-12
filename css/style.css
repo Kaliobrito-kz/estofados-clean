@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --color-01: #06C;
+    --color-02: #000
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+.titulo-secao {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+#cabecalho{
+    background-color: var(--color-02);
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    /*Camadas*/
+    z-index: 1;
+
+}
+#cabecalho #logo{
+    width: 30px;
+}
+
+#cabecalho #menu ul{
+    display: flex;
+    text-align: right;
+    
+}
+/*Colocar a logo do lado da logo*/
+#cabecalho .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#cabecalho #menu a{
+    color: #fff;
+    /*Display Block Permite o uso de Padding*/
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+#cabecalho #menu a:hover{
+    background-color: var(--color-01);
+}
+#cabecalho #menu li{
+    list-style-type: none;
+}
+#cabecalho #menu li .submenu{
+    display: none;
+    position: absolute;
+    background-color: var(--color-02);
+
+}
+#cabecalho #menu li:hover .submenu{
+    display: block;
+}
+
+.modelos {
+    /*Cria colunas*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+.modelos img {
+    height: 200px;
+    margin-bottom: 20px;
+}
+.modelos h2{
+    margin-bottom: 20px;
+}
+.modelos ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.modelos ul li{
+    margin-bottom: 10px
+}
+.modelos .but{
+    background-color: var(--color-01);
+    display: block;
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s linear;
+     
+}
+.modelos .but:hover{
+    background-color: black;
+}
+
+#rodape{
+    background-color: var(--color-02);
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    margin-top: 20px;
+}
+#rodape a{
+    color:var(--color-01);
+    text-decoration: none;
+}
+#rodape a:hover{
+    text-decoration: underline;
+}
